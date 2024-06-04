@@ -6,7 +6,7 @@ var URL = require("url"),
   concat = require("concat-stream");
 
 var urlPrefix = require("../lib/url-prefixer.js")({
-  prefix: "/proxy/",
+  prefix: "/Funny/",
 });
 
 var testLines = {
@@ -19,9 +19,9 @@ var testLines = {
     '<head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">',
 
   '<link rel="stylesheet" href="http://example.com/styles.css"/>':
-    '<link rel="stylesheet" href="/proxy/http://example.com/styles.css"/>',
+    '<link rel="stylesheet" href="/Funny/http://example.com/styles.css"/>',
   '<link rel="stylesheet" href="https://example.com/styles.css"/>':
-    '<link rel="stylesheet" href="/proxy/https://example.com/styles.css"/>',
+    '<link rel="stylesheet" href="/Funny/https://example.com/styles.css"/>',
   '<link rel="stylesheet" href="//example.com/styles.css"/>':
     '<link rel="stylesheet" href="/proxy/http://example.com/styles.css"/>',
   '<link rel="stylesheet" href="/styles.css"/>':
